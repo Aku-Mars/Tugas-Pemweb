@@ -4,94 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Tugas Pemweb</title>
-
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <!-- Navbar 1 -->
-      <a class="navbar-brand" href="#">Home</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!-- Navbar 2 -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Project</a> 
-          </li>
-
-        <!-- Navbar 3 -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">CV</a>
-          </li> 
-        </ul>
-
-        <!-- Search Bar -->
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-
-      </div>
-    </div>
-  </nav>
-    
-  <!-- Tittle -->
-  <div class="container text-center" style="margin-top: 50px;">
-    <div class="row">
-      <div class="col">
-        <h1>SELAMAT DATANG DI SINI</h1>
-        <h2>Project Yang Akan Dikerjakan : Pembuatan </h2>
-      </div>
-    </div>
-  </div>
-  <div class="container text-center" style="margin-top: 50px; margin-bottom:50px">
-  <h2>CV MASING MASING</h2>
-  </div>
-
-  <!-- Card -->
-  <div class="container" style="display: flex; justify-content: center;">
-    <div class="card" style="width: 18rem; margin:10px">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
-      </div>
-    </div>  
-    
-    <div class="card" style="width: 18rem; margin:10px">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; margin:10px">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; margin:10px">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
   
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Project</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCV" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CV
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownCV">
+                      <li><a class="dropdown-item" href="#adit">Adit</a></li>
+                      <li><a class="dropdown-item" href="#arifin">Arifin</a></li>
+                      <li><a class="dropdown-item" href="#alfarizy">Alfarizy</a></li>
+                      <li><a class="dropdown-item" href="#afta">Afta</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="content">
+      <h1>SELAMAT DATANG</h1>
+      <ul class="profile">
+        <!-- CV Adit -->
+        <li id="adit" class="card">
+          <article>
+            <img src="assets/img/adit.jpg" alt="Adit">
+            <div class="card-content">
+              <h2>Adit</h2>
+              <p><strong>Alamat:</strong> Jalan Merdeka No.1, Bandung</p>
+              <p><strong>Email:</strong> adit@example.com</p>
+              <p><strong>Pendidikan:</strong></p>
+              <ul>
+                <li>S1 Teknik Informatika - Universitas XYZ (2015-2019)</li>
+              </ul>
+              <p><strong>Pengalaman Kerja:</strong></p>
+              <ul>
+                <li>Junior Developer di PT. ABC (2019-2020)</li>
+                <li>Software Engineer di PT. DEF (2020-Sekarang)</li>
+              </ul>
+              <p><strong>Keahlian:</strong> Java, Python, Web Development</p>
+              <p><strong>Referensi:</strong> Disediakan atas permintaan</p>
+              <div>
+                <a href="https://www.linkedin.com/in/adit" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/aditya.jhs" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/ivepyife" target="_blank"><i class="bi bi-github"></i></a>
+              </div>
+          </article>
+          <aside>
+            
+          </aside>
+          </div>
+        </li>
+
+        <!-- CV Arifin -->
+        <li id="arifin" class="card">
+          <img src="path_to_adit_image.jpg" alt="Adit">
+          <div class="card-content">
+            <h2>Adit</h2>
+            <p><strong>Alamat:</strong> Jalan Merdeka No.1, Bandung</p>
+            <p><strong>Email:</strong> adit@example.com</p>
+            <p><strong>Pendidikan:</strong></p>
+            <ul>
+              <li>S1 Teknik Informatika - Universitas XYZ (2015-2019)</li>
+            </ul>
+            <p><strong>Pengalaman Kerja:</strong></p>
+            <ul>
+              <li>Junior Developer di PT. ABC (2019-2020)</li>
+              <li>Software Engineer di PT. DEF (2020-Sekarang)</li>
+            </ul>
+            <p><strong>Keahlian:</strong> Java, Python, Web Development</p>
+            <p><strong>Referensi:</strong> Disediakan atas permintaan</p>
+            <div>
+              <a href="https://www.linkedin.com/in/adit" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/aditya.jhs" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/ivepyife" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- CV Alfarizy -->
+        <li id="alfarizy" class="card">
+          <img src="path_to_adit_image.jpg" alt="Adit">
+          <div class="card-content">
+            <h2>Adit</h2>
+            <p><strong>Alamat:</strong> Jalan Merdeka No.1, Bandung</p>
+            <p><strong>Email:</strong> adit@example.com</p>
+            <p><strong>Pendidikan:</strong></p>
+            <ul>
+              <li>S1 Teknik Informatika - Universitas XYZ (2015-2019)</li>
+            </ul>
+            <p><strong>Pengalaman Kerja:</strong></p>
+            <ul>
+              <li>Junior Developer di PT. ABC (2019-2020)</li>
+              <li>Software Engineer di PT. DEF (2020-Sekarang)</li>
+            </ul>
+            <p><strong>Keahlian:</strong> Java, Python, Web Development</p>
+            <p><strong>Referensi:</strong> Disediakan atas permintaan</p>
+            <div>
+              <a href="https://www.linkedin.com/in/adit" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/aditya.jhs" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/ivepyife" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- CV Afta -->
+        <li id="afta" class="card">
+          <img src="path_to_adit_image.jpg" alt="Adit">
+          <div class="card-content">
+            <h2>Adit</h2>
+            <p><strong>Alamat:</strong> Jalan Merdeka No.1, Bandung</p>
+            <p><strong>Email:</strong> adit@example.com</p>
+            <p><strong>Pendidikan:</strong></p>
+            <ul>
+              <li>S1 Teknik Informatika - Universitas XYZ (2015-2019)</li>
+            </ul>
+            <p><strong>Pengalaman Kerja:</strong></p>
+            <ul>
+              <li>Junior Developer di PT. ABC (2019-2020)</li>
+              <li>Software Engineer di PT. DEF (2020-Sekarang)</li>
+            </ul>
+            <p><strong>Keahlian:</strong> Java, Python, Web Development</p>
+            <p><strong>Referensi:</strong> Disediakan atas permintaan</p>
+            <div>
+              <a href="https://www.linkedin.com/in/adit" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/aditya.jhs" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/ivepyife" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
