@@ -58,6 +58,13 @@ h4 {
   padding: 10px 0;
   color: #ffffff;
   text-align: center;
+
+  position: sticky;
+  top: 0;
+}
+
+.jumbotron {
+    background-color: #9fd19b;
 }
 
 .profile {
