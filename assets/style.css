@@ -1,184 +1,191 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h2 {
-    padding-bottom: 15px;
-    border-bottom: 5px solid #496989;
-    font-weight: bolder;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #496989;
+  font-weight: bolder;
 }
 
 h3 {
-    color: #496989;
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
+  color: #496989;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h4 {
-    font-size: 17px;
-    font-weight: bold;
-    padding-bottom: 0;
-    margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .aside h3 {
-    background-color: #E2F4C5;
-    padding: 5px;
-    margin: 0;
+  background-color: #e2f4c5;
+  padding: 5px;
+  margin: 0;
 }
 
 .aside h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .navbar {
-    background-color: #007bff;
-    padding: 10px 0;
-    color: #ffffff;
-    text-align: center;
+  background-color: #9fd19b;
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: center;
 }
 
 .profile {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  margin-top: 2.5em;
 }
 
 .card {
-    color: #496989;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+  color: #496989;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
 
 .content article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 0;
-    border-bottom: 2px solid #A8CD9F;
-    background-color: #E2F4C5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 2px solid #a8cd9f;
+  background-color: #e2f4c5;
 
-    flex: 2;
+  flex: 2;
 }
 
 main {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
 }
 
 .card img {
-    width: 200px;
-    height: auto;
-    border-radius: 20%;
-    padding-bottom: 20px;
-    object-fit: cover;
-    align-self: center;
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  padding-bottom: 20px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .card-content {
-    flex-grow: 1;
-    padding: 0 20px;
+  flex-grow: 1;
+  padding: 0 20px;
 }
 
 .card-content ul {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: all 0.3s ease-in-out;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .card div a:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 .content .aside {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #496989;
-    color: #A8CD9F;
-    flex: 3;
-    padding: 0 70px;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #496989;
+  color: #a8cd9f;
+  flex: 3;
+  padding: 0 70px;
+  gap: 20px;
 }
 
 .icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
 }
 
 .icon a {
-    text-decoration: none;
-    color: #496989;
+  text-decoration: none;
+  color: #496989;
 }
 
 footer {
-    display: flex;
-    color: white;
-    background-color: #94A684;
-    
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
+  display: flex;
+  color: white;
+  background-color: #94a684;
+
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
 
 footer p {
-    align-self: stretch;
-    text-align: center;
-    margin: 10px;
+  align-self: stretch;
+  text-align: center;
+  margin: 10px;
 }
 
-
 @media (max-width: 768px) {
-    .card {
-        flex-direction: column; /* Mengubah arah flex items menjadi vertikal */
-        align-items: flex-start; /* Menyelaraskan items ke kiri */
-    }
-    
-    .card img {
-        width: 100%; /* Mengubah lebar gambar menjadi penuh */
-        max-width: 200px; /* Membatasi lebar maksimum gambar */
-        height: auto; /* Menjaga rasio aspek */
-        margin-bottom: 20px; /* Menambahkan margin bawah untuk pemisahan dari teks */
-    }
-    
-    .card-content {
-        padding-left: 0; /* Menghilangkan padding kiri pada tampilan mobile */
-    }
-    .card h2 {
-      font-size: 18px;
-    }
+  .card {
+    flex-direction: column; /* Mengubah arah flex items menjadi vertikal */
+    align-items: flex-start; /* Menyelaraskan items ke kiri */
+  }
 
-    main {
-      margin: 10px;
-    }
+  .card img {
+    width: 100%; /* Mengubah lebar gambar menjadi penuh */
+    max-width: 200px; /* Membatasi lebar maksimum gambar */
+    height: auto; /* Menjaga rasio aspek */
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk pemisahan dari teks */
+  }
+
+  .card-content {
+    padding-left: 0; /* Menghilangkan padding kiri pada tampilan mobile */
+  }
+  .card h2 {
+    font-size: 18px;
+  }
+
+  main {
+    margin: 10px;
+  }
 }
