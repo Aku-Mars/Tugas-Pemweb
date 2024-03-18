@@ -20,7 +20,33 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid #A8CD9F;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #496989;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #496989;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.aside h3 {
+    background-color: #E2F4C5;
+    padding: 5px;
+    margin: 0;
+}
+
+.aside h4 {
+    margin: 0;
 }
 
 .navbar {
@@ -30,31 +56,32 @@ h2 {
     text-align: center;
 }
 
-.content .profile {
+.profile {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.content li {
-    color: white;
-    background-color: #496989;
+.card {
+    color: #496989;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
 
 .content article {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px 0;
     border-bottom: 2px solid #A8CD9F;
-}
+    background-color: #E2F4C5;
 
-.profile a {
-    border-radius: 20%;
-    background-color: white;
+    flex: 2;
 }
-
 
 main {
     margin: 20px auto;
@@ -62,26 +89,22 @@ main {
     max-width: 1200px;
 }
 
-.card {
-    display: flex; /* Mengatur .card sebagai flex container */
-    align-items: center; /* Menengahkan items secara vertikal */
-    justify-content: start; /* Menyelaraskan konten ke awal */
-    padding: 20px; /* Menambahkan padding untuk estetika */
-    gap: 20px; /* Menambahkan gap antar items */
-    position: relative; /* Mempersiapkan posisi relatif untuk pemosisian elemen absolut */
-}
-
 .card img {
-    width: 300px; /* Menentukan ukuran gambar */
-    height: auto; /* Menjaga rasio aspek gambar */
-    border-radius: 0%; /* Menghilangkan lengkungan */
-    object-fit: cover; /* Menutupi area yang ditentukan tanpa memotong gambar */
-    align-self: flex-start; /* Menyelaraskan gambar ke atas */
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    padding-bottom: 20px;
+    object-fit: cover;
+    align-self: center;
 }
 
 .card-content {
-    flex-grow: 1; /* Memungkinkan elemen informasi mengisi ruang tersisa */
-    padding-left: 20px; /* Menambahkan padding kiri untuk pemisahan dari gambar */
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.card-content ul {
+    padding-bottom: 10px;
 }
 
 .card:hover {
@@ -91,11 +114,49 @@ main {
 }
 
 .card div a:hover {
-    background-color: #e7e7e7;
-    border-radius: 50%;
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
 }
+
+.content .aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #496989;
+    color: #A8CD9F;
+    flex: 3;
+    padding: 0 70px;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #496989;
+}
+
+footer {
+    display: flex;
+    color: white;
+    background-color: #94A684;
+    
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+footer p {
+    align-self: stretch;
+    text-align: center;
+    margin: 10px;
+}
+
 
 @media (max-width: 768px) {
     .card {
