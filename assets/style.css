@@ -28,6 +28,10 @@ h2 {
     padding: 10px 0;
     color: #ffffff;
     text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .content .profile {
@@ -63,30 +67,43 @@ main {
 }
 
 .card {
-    display: flex; /* Mengatur .card sebagai flex container */
-    align-items: center; /* Menengahkan items secara vertikal */
-    justify-content: start; /* Menyelaraskan konten ke awal */
-    padding: 20px; /* Menambahkan padding untuk estetika */
-    gap: 20px; /* Menambahkan gap antar items */
-    position: relative; /* Mempersiapkan posisi relatif untuk pemosisian elemen absolut */
+    display: flex;
+    /* Mengatur .card sebagai flex container */
+    align-items: center;
+    /* Menengahkan items secara vertikal */
+    justify-content: start;
+    /* Menyelaraskan konten ke awal */
+    padding: 20px;
+    /* Menambahkan padding untuk estetika */
+    gap: 20px;
+    /* Menambahkan gap antar items */
+    position: relative;
+    /* Mempersiapkan posisi relatif untuk pemosisian elemen absolut */
 }
 
 .card img {
-    width: 300px; /* Menentukan ukuran gambar */
-    height: auto; /* Menjaga rasio aspek gambar */
-    border-radius: 0%; /* Menghilangkan lengkungan */
-    object-fit: cover; /* Menutupi area yang ditentukan tanpa memotong gambar */
-    align-self: flex-start; /* Menyelaraskan gambar ke atas */
+    width: 300px;
+    /* Menentukan ukuran gambar */
+    height: auto;
+    /* Menjaga rasio aspek gambar */
+    border-radius: 0%;
+    /* Menghilangkan lengkungan */
+    object-fit: cover;
+    /* Menutupi area yang ditentukan tanpa memotong gambar */
+    align-self: flex-start;
+    /* Menyelaraskan gambar ke atas */
 }
 
 .card-content {
-    flex-grow: 1; /* Memungkinkan elemen informasi mengisi ruang tersisa */
-    padding-left: 20px; /* Menambahkan padding kiri untuk pemisahan dari gambar */
+    flex-grow: 1;
+    /* Memungkinkan elemen informasi mengisi ruang tersisa */
+    padding-left: 20px;
+    /* Menambahkan padding kiri untuk pemisahan dari gambar */
 }
 
 .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
@@ -99,25 +116,33 @@ main {
 
 @media (max-width: 768px) {
     .card {
-        flex-direction: column; /* Mengubah arah flex items menjadi vertikal */
-        align-items: flex-start; /* Menyelaraskan items ke kiri */
+        flex-direction: column;
+        /* Mengubah arah flex items menjadi vertikal */
+        align-items: flex-start;
+        /* Menyelaraskan items ke kiri */
     }
-    
+
     .card img {
-        width: 100%; /* Mengubah lebar gambar menjadi penuh */
-        max-width: 200px; /* Membatasi lebar maksimum gambar */
-        height: auto; /* Menjaga rasio aspek */
-        margin-bottom: 20px; /* Menambahkan margin bawah untuk pemisahan dari teks */
+        width: 100%;
+        /* Mengubah lebar gambar menjadi penuh */
+        max-width: 200px;
+        /* Membatasi lebar maksimum gambar */
+        height: auto;
+        /* Menjaga rasio aspek */
+        margin-bottom: 20px;
+        /* Menambahkan margin bawah untuk pemisahan dari teks */
     }
-    
+
     .card-content {
-        padding-left: 0; /* Menghilangkan padding kiri pada tampilan mobile */
+        padding-left: 0;
+        /* Menghilangkan padding kiri pada tampilan mobile */
     }
+
     .card h2 {
-      font-size: 18px;
+        font-size: 18px;
     }
 
     main {
-      margin: 10px;
+        margin: 10px;
     }
 }
